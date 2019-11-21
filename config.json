@@ -1,0 +1,46 @@
+{
+  "jiraUrl": "https://jira-prod.tcc.etn.com",
+  "jiraUsername": "e0433399",
+  "jiraPauseMilliseconds": 500,
+  "influxUrl": "http://hostname:8086",
+  "influxDB": "jira",
+  "influxUsername": "username",
+  "influxPassword": "password",
+  "queries": [
+    {
+      "tags": {
+        "entity":"wavelinx",
+        "status":"all"
+      },
+      "jql": "project = Wavelinx"
+    },
+    {
+      "tags": {
+        "entity":"wavelinx",
+        "status":"todo"
+      },
+      "jql": "project = Wavelinx and status = \"To Do\""
+    },
+    {
+      "tags": {
+        "entity":"wavelinx",
+        "status":"in_progress"
+      },
+      "jql": "project = Wavelinx and status = \"In Progress\""
+    },
+    {
+      "tags": {
+        "entity":"wavelinx",
+        "status":"done"
+      },
+      "jql": "project = Wavelinx and status = \"Done\""
+    },
+    {
+      "tags": {
+        "entity":"WAC2",
+        "status":"open"
+      },
+      "jql": "key=OCB-1"
+    }
+  ]
+}
