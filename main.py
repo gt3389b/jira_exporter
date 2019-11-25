@@ -1,3 +1,6 @@
+# Based off of:
+#    https://github.com/cbonitz/jira-influx
+
 import json
 from datetime import datetime
 import utils
