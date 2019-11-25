@@ -41,6 +41,13 @@
         "status":"open"
       },
       "jql": "key=OCB-1"
+    },
+    {
+      "tags": {
+        "entity":"Cybersecurity",
+        "status":"open"
+      },
+      "jql": "cf[10101]=\"Cyber-security Vulnerabilities\" and status = \"Open\""
     }
   ]
 }
