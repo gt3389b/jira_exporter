@@ -4,7 +4,6 @@
 import json
 from datetime import datetime
 import utils
-#import requests
 import string
 import requests 
 from pprint import pprint
