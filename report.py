@@ -3,6 +3,7 @@ from jira import JIRA
 import json
 from datetime import datetime
 import utils
+import chalk
 #import requests
 import string
 import requests 
@@ -73,7 +74,8 @@ for epic in epics:
     print("EPIC: ",epic, epic.fields.status)
     stories = jira.search_issues(jql)
     for story in stories:
-        print("  STORY:",story, story.fields.status)
+        print("  STORY:",story, chalk.yellow(story.fields.status), story.fields.summary)
+        #pprint(story.raw)
         status.update({str(story.fields.status): 1})
         #followLinks(story.fields.issuelinks)
 
